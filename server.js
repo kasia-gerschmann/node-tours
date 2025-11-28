@@ -10,13 +10,13 @@ mongoose.connect(DB, {
   useCreateIndex: true,
   useFindAndModify: false
 }).then(con => {
+/*
   console.log(con.connections);
+*/
   console.log('DB connection successful!');
 });
 
 const app = require('./app');
-
-console.log(process.env);
 
 const port = process.env.PORT || 3001;
 
